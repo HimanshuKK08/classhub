@@ -1,0 +1,14 @@
+{
+  "name": "classhub",
+  "version": "1.0.0",
+  "description": "ClassHub — GitHub Classroom-style platform (MERN + C++)",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently --names \"CLIENT,SERVER\" --prefix-colors \"cyan,magenta\" \"npm run dev --prefix client\" \"npm run dev --prefix server\"",
+    "dev:client": "npm run dev --prefix client",
+    "dev:server": "npm run dev --prefix server"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

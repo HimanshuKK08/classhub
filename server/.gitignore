@@ -1,0 +1,15 @@
+# Dependencies
+node_modules/
+
+# Environment variables
+.env
+
+# Git repositories stored on disk
+../repos/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Build output
+dist/

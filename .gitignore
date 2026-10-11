@@ -1,0 +1,24 @@
+# node_modules (all workspaces)
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Environment variables — never commit real secrets
+.env
+client/.env
+server/.env
+
+# Git repositories stored on disk by the server
+repos/
+
+# C++ build artifacts
+plagiarism-engine/build/
+plagiarism-engine/*.o
+plagiarism-engine/plagiarism-engine
+plagiarism-engine/plagiarism-engine.exe
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+*.swp
