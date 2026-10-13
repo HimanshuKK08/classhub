@@ -1,10 +1,21 @@
 #include <iostream>
 
-// Copied helper function from original.cpp
+// Helper copied from original.cpp
 void swapValues(int& a, int& b) {
     int temp = a;
     a = b;
     b = temp;
+}
+
+// Full sorting algorithm copied from original.cpp
+void bubbleSort(int arr[], int n) {
+    for (int i = 0; i < n - 1; ++i) {
+        for (int j = 0; j < n - i - 1; ++j) {
+            if (arr[j] > arr[j + 1]) {
+                swapValues(arr[j], arr[j + 1]);
+            }
+        }
+    }
 }
 
 // Unrelated logic: iterative Fibonacci computation
@@ -23,10 +34,11 @@ int computeFibonacci(int n) {
 }
 
 int main() {
-    int x = 10, y = 20;
-    swapValues(x, y);
+    int data[] = {5, 2, 9, 1, 7};
+    int len = 5;
+    bubbleSort(data, len);
 
-    int fib = computeFibonacci(x);
+    int fib = computeFibonacci(data[0]);
     std::cout << "Result: " << fib << std::endl;
     return 0;
 }
